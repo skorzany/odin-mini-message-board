@@ -1,0 +1,18 @@
+<%- include('./partials/header.ejs') %>
+<main>
+  <h2>Add new message</h2>
+  <form method="POST" action="/new">
+    <ul>
+      <li>
+        <label for="username">Username*</label>
+        <input type="text" id="username" name="username" required />
+      </li>
+      <li>
+        <label for="message">Message*</label>
+        <input type="text" id="message" name="message" required />
+      </li>
+    </ul>
+    <button type="submit">Send message</button>
+  </form>
+</main>
+<%- include('./partials/footer.ejs') %>

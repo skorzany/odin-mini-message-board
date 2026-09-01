@@ -1,0 +1,11 @@
+<%- include('./partials/header.ejs') %>
+<main>
+  <h2>Message details</h2>
+  <ul>
+    <li><strong>Username:</strong> <%= message.user %></li>
+    <li><strong>Text:</strong> <%= message.text %></li>
+    <li><strong>Date:</strong> <%= message.added %></li>
+    <li><a href="/">Back to the main page</a></li>
+  </ul>
+</main>
+<%- include('./partials/footer.ejs') %>
